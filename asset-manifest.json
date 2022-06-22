@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Hello/static/css/main.0a36e653.css",
+    "main.js": "/Hello/static/js/main.99218cb0.js",
+    "static/media/galleryapp.PNG": "/Hello/static/media/galleryapp.eb66c98bdff82617a85f.PNG",
+    "static/media/MuesemPage.png": "/Hello/static/media/MuesemPage.961abe08219b76a82cd4.png",
+    "static/media/weatherapp.png": "/Hello/static/media/weatherapp.e7184f9ced0196941e6d.png",
+    "static/media/react.png": "/Hello/static/media/react.c10b48ed20ba1e5a05a3.png",
+    "static/media/game1.PNG": "/Hello/static/media/game1.2a3048d6e8f7c6bff645.PNG",
+    "static/media/csh.png": "/Hello/static/media/csh.46f396e66998a55f511a.png",
+    "static/media/guess.PNG": "/Hello/static/media/guess.d6a11fcea04139d94f16.PNG",
+    "static/media/jquery.png": "/Hello/static/media/jquery.b121b212da4345cefb4a.png",
+    "static/media/python.png": "/Hello/static/media/python.be209286fa2769c0af82.png",
+    "static/media/php.png": "/Hello/static/media/php.1b5edc9de0696b35cc46.png",
+    "static/media/js.png": "/Hello/static/media/js.d7df59b63779b271c6ff.png",
+    "static/media/sass.png": "/Hello/static/media/sass.4934c12eaa4bbf8b0c9a.png",
+    "static/media/c++.png": "/Hello/static/media/c++.5b2b619dd06d8434a403.png",
+    "static/media/git.png": "/Hello/static/media/git.8a68e8bfc0e64c50455f.png",
+    "static/media/css.png": "/Hello/static/media/css.910d88a09d076a89e9ba.png",
+    "static/media/1.png": "/Hello/static/media/1.cd900aa138377f85b532.png",
+    "static/media/ps.png": "/Hello/static/media/ps.ca584527a56bf805b49c.png",
+    "static/media/ai.png": "/Hello/static/media/ai.a80208bd6d5b873fc104.png",
+    "index.html": "/Hello/index.html",
+    "main.0a36e653.css.map": "/Hello/static/css/main.0a36e653.css.map",
+    "main.99218cb0.js.map": "/Hello/static/js/main.99218cb0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a36e653.css",
+    "static/js/main.99218cb0.js"
+  ]
+}
