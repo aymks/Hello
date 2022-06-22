@@ -1,0 +1,35 @@
+:root {
+  --black: rgba(3, 4, 49, 0.692);
+  --white: rgba(255, 255, 255, 0.986);
+  --red: rgba(62, 43, 146, 0.425);
+  --redh: rgba(26, 39, 155, 0.11);
+  --reds: rgba(1, 0, 70, 0.555);
+  --gradient-color-1: #620080;
+  --gradient-color-2: #01016d;
+  --gradient-color-3: #810081;
+  --gradient-color-4: #103883;
+  --s1:#2c2c2c;
+  --s2:#ffffff;
+}
+
+body {
+  user-select: none;
+  cursor: default;
+  cursor: url("cursor8.png") 1 1, auto;
+
+  //       a:hover {
+  //         cursor: url('cursor2.png') 19 19,auto!important;
+  //   }
+}
+
+//  $pointer:url('cursor2.png') 19 19, auto ;
+$textp: url("cursor7.png") 1 1, auto;
+$navbar: rgba(var(--black), 0.9);
+$hambar: var(--black);
+$red: var(--red);
+$reds: var(--reds);
+$redh: var(--redh);
+$black: var(--black);
+$white: var(--white);
+$s1: var(--s1);
+$s2: var(--s2);

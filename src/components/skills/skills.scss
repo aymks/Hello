@@ -1,0 +1,31 @@
+@import "../../global.scss";
+
+.works {
+  .txt {
+    overflow: hidden;
+    user-select: none;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(80px + 10vw);
+    font-style: italic;
+    font-weight: 500;
+    -webkit-text-stroke: 1.5px $white;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    transition: all 1.5s ease;
+  }
+
+  .slider {
+    background-color: rgba(255, 255, 255, 0.158);
+    height: auto;
+    //backdrop-filter: blur(1px);
+    overflow: hidden;
+  }
+  .ic {
+    position: relative;
+    img {
+      height: calc(30px + 13vw);
+    }
+  }
+}

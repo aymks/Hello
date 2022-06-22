@@ -1,0 +1,102 @@
+@import "../../global.scss";
+
+.intro {
+  display: flex;
+  @media only screen and (max-width: 768px) {
+    flex: wrap;
+    flex-direction: column-reverse;
+  }
+  .btext {
+    overflow: hidden;
+    user-select: none;
+
+    font-style: italic;
+    font-weight: 500;
+    -webkit-text-stroke: 1.5px $white;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    transition: all 0.8s ease;
+    flex: wrap;
+    @media only screen and (max-width: 768px) {
+      font-size: calc(2vh + 6vw);
+    }
+  }
+  .big {
+    font-size: calc(2vh + 4vw);
+  }
+  .tex {
+    margin-left: 20px;
+    font-size: calc(2vh + 1vw);
+    -webkit-text-stroke: 1px $white;
+    -webkit-text-fill-color: $white;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .left {
+    flex: 0.5;
+
+    overflow: hidden;
+    @media only screen and (max-width: 768px) {
+      flex: 0.6;
+
+      .imgContainer {
+        height: 600px;
+        width: 600px;
+        margin-top: 0px;
+        padding: 30px;
+      }
+    }
+    .imgContainer {
+      height: 1200px;
+      width: 1200px;
+      background-color: $red;
+      -webkit-text-stroke: 0;
+      -webkit-text-fill-color: rgba(14, 29, 78, 0.637);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      font-size: 45vh;
+      float: right;
+      margin-top: 10px;
+      @media only screen and (max-width: 768px) {
+        height: 600px;
+        width: 600px;
+        margin-top: 0px;
+      }
+    }
+  }
+  .right {
+    flex: 0.5;
+    background-color: rgba(53, 77, 155, 0);
+    padding-top: 70px;
+    margin-left: 100px;
+    @media only screen and (max-width: 768px) {
+      flex: 0.4;
+      padding-top: 30px;
+      margin-left: 50px;
+    }
+  }
+  .arr {
+    position: relative;
+    color: $white;
+    top: 80%;
+    right: 10%;
+    font-size: 120px;
+    animation: blinker 2s ease-in-out infinite;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  @keyframes blinker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

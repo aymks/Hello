@@ -1,0 +1,120 @@
+@import "./global.scss";
+
+.app {
+  
+  .btn3 {
+    position: fixed;
+
+    right: 100px;
+    top: 18px;
+    z-index: 999;
+    border-radius: 10px;
+    user-select: none;
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $s1;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 30px;
+      bottom: 4px;
+      box-shadow: inset -7px 0 0 2px $s2;
+      background-color: $s1;
+
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    input:checked + .slider {
+      background-color: $s1;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(-26px);
+      -ms-transform: translateX(-26px);
+      transform: translateX(-26px);
+      background-color: $s2;
+    }
+
+    .slider.round {
+      border-radius: 17px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+  }
+  @keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+
+  .bkg {
+    height: 100vh;
+    //animation: bg-scrolling-reverse 0.6s infinite; /* IE 10+ */
+    //animation-timing-function: linear;
+    transition: all 0.6s ease;
+    //background: url("2.jpg") repeat 0 0;
+    &.active {
+      --black: #ffffff;
+      --white: #111111;
+      --red: rgba(0, 137, 201, 0.397);
+      --redh: rgba(3, 86, 124, 0.945);
+      --reds: rgb(0, 69, 148);
+      --s1:#76acf3;
+      --s2:#ffe600;
+      backdrop-filter: invert(95%) saturate(100%) hue-rotate(150deg);
+      //background: url("12.png") repeat 0 0;
+      //filter: invert(100%);
+      transition: all 0.6s ease;
+    }
+  }
+
+  .sections {
+    width: 100%;
+    height: calc(100vh - 0px);
+
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    > * {
+      padding-top: 70px;
+      width: 100vw;
+      height: calc(100vh - 70px);
+      scroll-snap-align: start;
+    }
+    .cont {
+      padding-top: 0px;
+    }
+  }
+}
