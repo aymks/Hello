@@ -14,12 +14,8 @@
   justify-content: center;
   transition: all 0.6s ease;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.329);
-  backdrop-filter: none;
+ 
 
-/* URL to SVG filter */
-
-
-/* <filter-function> values */
 backdrop-filter: blur(6px);
   &.active {
     right: 0;
